@@ -14,13 +14,39 @@ This project, named `ft_printf`, is a reimplementation of the `printf` function.
 - %% : prints a percent sign
 
 ## Instructions 
-We have to use an archave name libftprintf.a in our makefile . In my makefile i use 
+The project compile into a static library called libftprintf.a in our Makefile . 
+To compile the library simply run :
+cc main.c linftprintf.a
+The Makefile provides the following rules and variables :
 
-- all : the name of the programe name
-- clean : clean all the files object
-- fclean : to clean all the files object created and also the program names created
-- re : fclean and then create files in obj
-- CFLAGS : I use the flags which shows the error important
-- SRC : where I put all of my C files thaht i use
+- all : builds the library libftprintf.a
+- clean : removes all object files
+- fclean : removes all object files and libftprintf.a
+- re : runs fclean and then rebuilds the library
+- CFLAGS : I use the flags to enable important warnings.
+- SRC : where I put all of my C files that I use
+
+##Ressources
+To understand the concept of `printf`, I used the following, ressources : 
+- [man printf](https://www.ibm.com/docs/en/i/7.5.0?topic=output-printf)
+And to learn about varidadics function which was a new concept for me, I used :
+- [variadic](https://www.geeksforgeeks.org/c/variadic-functions-in-c/)
+
+AI was udsed to:
+- help me understand a concept
+- act as a tutor to explain me certain notion in details
+
+##Algorithms and data structures
+The functions has a prototypes 
+###Prototypes
+```c
+int ft_printf(const char *format, ...);
+int ft_handle(char specifier, va_list *args);
+
+
+
+
+
+##Algorithms and data structures
 
 
