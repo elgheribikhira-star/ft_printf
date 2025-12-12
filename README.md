@@ -1,25 +1,17 @@
 # This project has been created as part of the 42 curriculum by kel-gher
 
 ## Description
-This project, named 'ft_printf' is a reimplementation of the 'printf' function. It is a variadic function that returns the number of characters printed and handles the following conversions :
+This project, named `ft_printf`, is a reimplementation of the `printf` function. It is a variadic function that returns the number of characters printed and handles the following conversions :
 
-%c : prints a single character.
-
-%s : prints a string
-
-%d : prints a signed decimal integer
-
-%i : prints a signed decimal integer
-
-%u : prints an unsigned decimal number
-
-%p : prints a pointer address
-
-%x : prints a hexadecimal number in lowercase
-
-%X : prints a hexadecimal number in uppercase
-
-%% : prints a percent sign
+- %c : prints a single character.
+- %s : prints a string
+- %d : prints a signed decimal integer
+- %i : prints a signed decimal integer
+- %u : prints an unsigned decimal integer
+- %p : prints a pointer address
+- %x : prints a hexadecimal number in lowercase
+- %X : prints a hexadecimal number in uppercase
+- %% : prints a percent sign
 
 ## Instructions 
 We have to use an archave name libftprintf.a in our makefile . In my makefile i use 
