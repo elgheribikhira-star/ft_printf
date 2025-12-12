@@ -26,11 +26,12 @@ The Makefile provides the following rules and variables :
 - CFLAGS : I use the flags to enable important warnings.
 - SRC : where I put all of my C files that I use
 
-##Ressources
-To understand the concept of `printf`, I used the following, ressources : 
-- [man printf](https://www.ibm.com/docs/en/i/7.5.0?topic=output-printf)
-And to learn about varidadics function which was a new concept for me, I used :
-- [variadic](https://www.geeksforgeeks.org/c/variadic-functions-in-c/)
+## Ressources
+- To understand the concept of `printf`, I used the following, ressources : 
+ [man printf](https://www.ibm.com/docs/en/i/7.5.0?topic=output-printf)
+  
+- And to learn about varidadics function which was a new concept for me, I used :
+ [variadic](https://www.geeksforgeeks.org/c/variadic-functions-in-c/)
 
 AI was udsed to:
 - help me understand a concept
@@ -38,10 +39,10 @@ AI was udsed to:
 
 ##Algorithms and data structures
 The functions has a prototypes 
-###Prototypes
+###Prototypes ft_printf
 ```c
-int ft_printf(const char *format, ...);
 int ft_handle(char specifier, va_list *args);
+
 
 
 
