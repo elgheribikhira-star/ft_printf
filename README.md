@@ -49,9 +49,16 @@ This function takes a format string and a variable number of arguments. It write
 The algorithm is based on a loop over the format string.
 
 - If the current character is  '%' : The next character is read as a conversion specifier (c, s, p, d, i, u, x, X,%); ft_handles is called with this specifier and the variadic argument list ; ft_handle retrieves the corresponding argument with va_arg, calls the appropriate helper function(character, string, integer, hexadecimal, etc) and returns the numbers characters printed.
-- If the current character is not '%' : it is writting directly to the standard output ,(for example using `write(1,&str[i],1))`; if the write is successful, the counter is incremented by 1 ; if write returns -1, the error is propagated by returning -1. 
+- If the current character is not '%' : it is writting directly to the standard output ,(for example using `write(1,&str[i],1)`); if the write is successful, the counter is incremented by 1 ; if write returns -1, the error is propagated by returning -1. 
 
 When the end of the format string is reached, we call va_end and return the total number of the string.
+
+### Data structures 
+The implementation if `ft_printf` only uses simple C types and a few helper constructs :
+- `int` used to store the return value of `ft_printf` 
+- `unsigned int` used for conversions that requires non-negative values, such as `%u`, `%x`,and `%X`
+- `char `and `char *` used to represent characters and strings, both for the format string and for the values printed(for examples %c and %s)
+- `va_list` (from `stdarg.h`)used to manage the variadic arguments. It remembers where we are in the list of arguments and is used with `va_start` `va_arg` and `va_end` to retrieve each value corresponding to a format specifier.
 
 
 
