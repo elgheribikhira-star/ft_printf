@@ -49,7 +49,7 @@ This function takes a format string and a variable number of arguments. It write
 The algorithm is based on a loop over the format string.
 
 - If the current character is  '%' : The next character is read as a conversion specifier (c, s, p, d, i, u, x, X,%); ft_handles is called with this specifier and the variadic argument list ; ft_handle retrieves the corresponding argument with va_arg, calls the appropriate helper function(character, string, integer, hexadecimal, etc) and returns the numbers characters printed.
-- If the current character is not '%' : it is writting directly to the standard output ,(for example using write(1,&str[i],1)); if the write is successful, the counter is incremented by 1 ; if write returns -1, the error is propagated by returning -1. 
+- If the current character is not '%' : it is writting directly to the standard output ,(for example using `write(1,&str[i],1))`; if the write is successful, the counter is incremented by 1 ; if write returns -1, the error is propagated by returning -1. 
 
 When the end of the format string is reached, we call va_end and return the total number of the string.
 
