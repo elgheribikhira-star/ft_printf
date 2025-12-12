@@ -40,10 +40,9 @@ AI was udsed to:
 ## Algorithms and data structures
 
 
-```c
-int ft_printf(char *str, ...);
 
-```md
+`int ft_printf(char *str, ...);`
+
 This function takes a format string and a variable number of arguments. It writes formatted output to the standard output and  returns an int, which represents the total number characters printed, or -1 if an error occurs. 
 
 #### Algorithm ft_printf
